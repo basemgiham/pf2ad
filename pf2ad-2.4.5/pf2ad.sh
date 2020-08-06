@@ -48,8 +48,8 @@ mkdir -p /var/db/samba4/winbindd_privileged
 chown -R :proxy /var/db/samba4/winbindd_privileged
 chmod -R 0750 /var/db/samba4/winbindd_privileged
 
-fetch -o /usr/local/pkg -q https://github.com/hcwwadmin/pf2ad/master/pf2ad-2.4.5/samba.inc
-fetch -o /usr/local/pkg -q https://github.com/hcwwadmin/pf2ad/master/pf2ad-2.4.5/samba.xml
+fetch -o /usr/local/pkg -q https://github.com/basemgiham/pf2ad/blob/master/pf2ad-2.4.5/samba.inc
+fetch -o /usr/local/pkg -q https://github.com/basemgiham/pf2ad/blob/master/pf2ad-2.4.5/samba.xml
 
 /usr/local/sbin/pfSsh.php <<EOF
 \$samba = false;
